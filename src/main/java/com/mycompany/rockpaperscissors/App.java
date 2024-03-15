@@ -15,6 +15,8 @@ public class App extends Application {
     public void start(Stage stage) {
         
         BorderPane layout = new BorderPane();
+        MainUI gameUI = new MainUI();
+        layout.setCenter(gameUI.getView());
         Scene scene = new Scene(layout);
         stage.setScene(scene);
         stage.show();
